@@ -57,7 +57,7 @@ body
 	width: 100%
 	position: relative
 .head-main
-	height: 100vh
+	min-height: 100vh
 	background: url(../img/bg-main.jpg) 0 0 no-repeat
 	background-size: cover
 	position: relative
@@ -227,5 +227,71 @@ body
 		text-decoration: none
 .btn-head
 	background: #303f9f
-	margin-bottom: 70px
+.people-wrap
+	width: 100%
+	max-width: 250px
+	margin: 70px auto 0
+	text-align: center
+.people__name
+	color: #fff
+	margin-top: 10px
+	font-size: 20px
+	line-height: 27px
+.people__date
+	margin-right: 5px
+	color: #fff
+	opacity: .54
+.people__time
+	color: #fff
+	opacity: .54
+.people__data-wrap
+	margin-bottom: 25px
+.people__com
+	display: inline-block
+	padding-left: 20px
+	color: #ffffff
+	transition: all .5s
+	opacity: .7
+	position: relative
+	float: left
+	&:hover
+		text-decoration: none
+		color: #fff
+		opacity: 1
+	&:focus
+		text-decoration: none
+	&:before
+		content: ""
+		position: absolute
+		width: 18px
+		height: 18px
+		background: url(../../img/forum.png) 0 0 no-repeat
+		top: 50%
+		transform: translateY(-50%)
+		left: 0
+.people__like
+	display: inline-block
+	padding-left: 20px
+	color: #ffffff
+	opacity: .7
+	transition: all .5s
+	position: relative
+	float: right
+	&:hover
+		text-decoration: none
+		color: #fff
+		opacity: 1
+	&:focus
+		text-decoration: none
+	&:before
+		content: ""
+		position: absolute
+		width: 18px
+		height: 18px
+		background: url(../../img/favorite_border.png) 0 0 no-repeat
+		top: 60%
+		transform: translateY(-50%)
+		left: 0
+@import "_section/_section-line"
+@import "_section/_section-blog"
 @import "media" // Всегда в конце
