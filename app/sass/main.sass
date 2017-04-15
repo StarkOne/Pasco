@@ -436,6 +436,66 @@ body
 	color: #fff
 .line-photo
 	background-color: #F5F5F5
+.main-footer
+	background-color: #303030
+	padding: 20px 0px
+.footer__content
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	flex-wrap: wrap
+.footer__list
+	display: flex
+.footer__link
+	display: block
+	padding: 10px	22px
+	color: #fff
+	text-transform: uppercase
+	&:hover
+		text-decoration: none
+		color: #fff
+.footer__search
+	margin-left: 90px
+	flex: 0 0 222px
+.search__footer
+	border: 1px solid #747779
+	display: flex
+	border-radius: 35px
+	justify-content: flex-start
+	input
+		border: none
+		background: transparent
+		outline: none
+		transition: all .5s
+		padding: 10px 15px
+		color: #fff
+		flex: 0 0 160px
+.footer__submit
+	border: none
+	outline: none
+	border-radius: 35px
+	padding: 0 18px
+	background: url(../img/search.png) no-repeat center center
+.footer__lang
+	margin-left: 65px
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		width: 18px
+		height: 18px
+		top: 53%
+		transform: translateY(-50%)
+		left: -18px
+		background: url(../img/icon/language.png) 0 0 no-repeat
+.footer__sel
+	border: none
+	background: transparent
+	outline: none	
+	color: rgba(255,255,255,.54)
+	option
+		color: #fff
+		background: #555
 @import "_section/_section-line"
 @import "_section/_section-blog"
 @import "media" // Всегда в конце
